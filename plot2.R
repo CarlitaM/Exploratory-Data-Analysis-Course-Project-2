@@ -18,7 +18,7 @@ aggregateEmissionsBaltimore <- aggregate(Emissions ~ year, baltimoreNEI,sum)
 
 ## Create Plot 2 
 
-png("plot2.png")
+png("plot2.png", width = 480, height = 480)
 barplot(aggregateEmissionsBaltimore$Emissions, names.arg = aggregateEmissionsBaltimore$year, xlab = "Year", ylab = "PM2.5 Emissions", col = "Blue", lwd = 3, main = "Total PM2.5 Emissions in Baltimore City")
 dev.off()
 
