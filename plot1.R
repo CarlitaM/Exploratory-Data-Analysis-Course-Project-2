@@ -18,8 +18,8 @@ aggregateEmissions <- aggregate(Emissions ~ year,NEI, sum)
 
 ## Create Plot 1
 
-png("plot1.png")
+png("plot1.png", , width = 480, height = 480)
 barplot(aggregateEmissions$Emissions, names.arg = aggregateEmissions$year, xlab = "Year", ylab = "PM2.5 Emissions", main = "Total PM2.5 Emissions in the United States", col = "Red")
 dev.off()
 
-## Response : Yes, total emissions from PM2.5 decreased in the United States from 1999 to 2008. 
+## Response : Yes, total emissions from PM2.5 decreased significantly in the United States from 1999 to 2008. 
