@@ -20,6 +20,6 @@ aggregateEmissionsBaltimore <- aggregate(Emissions ~ year, baltimoreNEI,sum)
 
 png("plot2.png", width = 480, height = 480)
 barplot(aggregateEmissionsBaltimore$Emissions, names.arg = aggregateEmissionsBaltimore$year, xlab = "Year", ylab = "PM2.5 Emissions", col = "Blue", lwd = 3, main = "Total PM2.5 Emissions in Baltimore City")
-dev.off()
+dev.off() 
 
 ## Response : Yes, total emissions in Baltimore city have decreased from 1999 to 2008 in general terms, although, it first decreased from 1999 to 2002, then increased again in 2005 to finally decrease to the lowest point in 2008. 
