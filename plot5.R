@@ -28,4 +28,4 @@ png("plot5.png", width = 480, height = 480)
 ggplot(motorEmissionsBaltimore, aes(factor(year), Emissions)) + geom_bar(stat = "identity") + guides(fill = FALSE) + xlab("Year") + ylab("PM2.5 Emissions") + ggtitle ("Total PM2.5 Emissions of Motor Vehicle Sources in Baltimore")
 dev.off()
 
-## Response : Emissions from motor evhicle sources have significantly decreased in Baltimore City from 99 to 08. 
+## Response : Emissions from motor vehicle sources have significantly decreased in Baltimore City from 99 to 08. 
